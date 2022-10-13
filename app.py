@@ -12,14 +12,13 @@ global studentOrganisationDetails
 def index():
     # Complete this function to get current date and time assign this value to currentDate, display this data on index.html
     currentDate = datetime.currentDate()
-    return render_template('index.html', currentDate)
+    return render_template('index.html', currentDate=currentDate)
 
 
 @app.get('/calculate')
 def displayNumberPage():
     # Complete this function to display form.html page
-
-
+    
 @app.route('/calculate', methods=['POST'])
 def checkNumber():
     # Get Number from form and display message according to number
